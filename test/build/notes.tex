@@ -1,0 +1,64 @@
+\hypertarget{usb-to-rs232-serial-adapter-harness}{%
+\section{USB-to-RS232 Serial Adapter Harness}\label{usb-to-rs232-serial-adapter-harness}}
+
+\hypertarget{1-scope}{%
+\subsection{1. Scope}\label{1-scope}}
+
+Assembly of harness \textbf{HRN-0042}, connecting a DB9 (X1) RS-232 port to a USB-A (X2) host lead through an FT232RL module (U1). Refer to the wiring diagram on sheet 2 and the bill of materials on
+sheet 3.
+
+\hypertarget{2-tools--materials}{%
+\subsection{2. Tools \& Materials}\label{2-tools--materials}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Item & Specification\tabularnewline
+\midrule
+\endhead
+Crimp tool & Molex 63819 series\tabularnewline
+Soldering iron & 350 C, chisel tip\tabularnewline
+Heat-shrink & 3:1 adhesive-lined, 3 mm\tabularnewline
+Flux & No-clean, rosin\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{3-assembly-steps}{%
+\subsection{3. Assembly Steps}\label{3-assembly-steps}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Cut cable \textbf{W1} to 300 mm and \textbf{W2} to 150 mm; strip 4 mm on each conductor.
+\item
+  Tin every U1 module pad before attaching wires.
+\item
+  Solder \textbf{W1} conductors to U1 per the colour map on sheet 2.
+\item
+  Solder \textbf{W2} RD / BK to U1 VCC / GND.
+\item
+  Crimp DB9 (X1) contacts onto \textbf{W1}; seat each contact until the lock tab latches.
+\item
+  Terminate USB-A (X2): VBUS to RD, GND to BK. Leave D- / D+ unconnected.
+\item
+  Apply heat-shrink over every solder joint and over the U1 module body.
+\item
+  Strain-relieve both cable entries with a zip tie 10 mm from the housing.
+\end{enumerate}
+
+\hypertarget{4-test}{%
+\subsection{4. Test}\label{4-test}}
+
+\begin{itemize}
+\tightlist
+\item
+  Continuity-check every pin pair against the bill of materials (sheet 3).
+\item
+  Insulation resistance, X1 shell to all pins: \textbf{\textgreater{} 20 Mohm at 250 V}.
+\item
+  Functional: enumerate on the host, loop TXD-RXD at X1, confirm echo at 115200 baud.
+\end{itemize}
+
+\begin{quote}
+\textbf{Revision A} -\/- initial release.
+\end{quote}

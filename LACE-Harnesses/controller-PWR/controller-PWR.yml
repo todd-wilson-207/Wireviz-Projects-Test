@@ -1,0 +1,61 @@
+metadata:
+  title: LACE Controller Power Harness
+  pn: LACE-001
+  revision: A
+  company: Viridian Labs
+  authors:
+    Drawn:
+      name: Todd Wilson
+      date: 2026-09-09
+  scale: NTS
+
+options:
+  mini_bom_mode: false
+  color_mode: SHORT
+
+connectors:
+  P:
+    type: Molex 3 Pin Conn
+    pincount: 3
+    manufacturer: Molex
+    mpn: "2064600022"
+    image: 
+      src: ./images/2157591003.png
+      height: 300
+  
+cables: 
+  W1:
+    gauge: 22 AWG
+    length: 6 in
+    wirecount: 2
+    colors: [BK]
+    manufacturer: CNC Tech
+    mpn: 1569-22-1-0500-001-1-TS
+    additional_components:
+      - type: Socket Contact Gold 20-24 AWG Crimp Power
+        qty: 4
+        manufacturer: Molex
+        mpn: "2064600022"
+
+  W2: 
+    gauge: 22 AWG
+    length: 6 in
+    wirecount: 1
+    colors: [RD]
+    manufacturer: TE Connectivity
+    mpn: FLTWC0311-22-2
+    additional_components:
+      - type: Socket Contact Gold 20-24 AWG Crimp Power
+        qty: 2
+        manufacturer: Molex
+        mpn: "2064600022"
+
+connections: 
+  -
+    - P.P1: [2,3]
+    - W1: [1,2]
+    - P.P2: [2,3]
+  -
+    - P.P1: [1]
+    - W2: [1]
+    - P.P2: [1]    
