@@ -8,6 +8,7 @@ Rc files read:
 Latexmk: This is Latexmk, John Collins, 20 November 2021, version: 4.76.
 Rule 'pdflatex': File changes, etc:
    Changed files, or newly in use since previous run(s):
+      '/var/lib/texmf/web2c/pdftex/pdflatex.fmt'
       'build/harness-drawing.pdf'
 ------------
 Run number 1 of rule 'pdflatex'
@@ -189,10 +190,10 @@ AED: lastpage setting LastPage
 (build/main.aux) ){/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on build/main.pdf (3 pages, 213308 bytes).
+Output written on build/main.pdf (3 pages, 213305 bytes).
 Transcript written on build/main.log.
 Latexmk: Log file says output to 'build/main.pdf'
 Latexmk: Examining 'build/main.log'
 === TeX engine is 'pdfTeX'
 Latexmk: All targets (build/main.pdf) are up-to-date
-==> LACE-Harnesses/controller-PWR: controller-PWR.pdf updated (17:02:00)
+==> LACE-Harnesses/controller-PWR: controller-PWR.pdf updated (19:11:22)

@@ -189,10 +189,10 @@ AED: lastpage setting LastPage
 (build/main.aux) ){/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on build/main.pdf (3 pages, 213812 bytes).
+Output written on build/main.pdf (3 pages, 213815 bytes).
 Transcript written on build/main.log.
 Latexmk: Log file says output to 'build/main.pdf'
 Latexmk: Examining 'build/main.log'
 === TeX engine is 'pdfTeX'
 Latexmk: All targets (build/main.pdf) are up-to-date
-==> LACE-Harnesses/controller-PWR-double: PWR-Double.pdf updated (17:05:07)
+==> LACE-Harnesses/controller-PWR-double: PWR-Double.pdf updated (19:20:29)
